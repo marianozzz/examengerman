@@ -1,2 +1,2 @@
 # examengerman
-examen
+Consigna Mostrar las lineas inactivas
