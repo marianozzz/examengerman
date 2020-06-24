@@ -1,7 +1,7 @@
 package com.utn.UTN.Phone.Model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.sun.javafx.beans.IDProperty;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +21,7 @@ public class LinesUser {
     @Column(name="idline")
     private Integer idline;
     @Column(name = "linenumber")
-    private String linenumber;
+    private Integer linenumber;
     @Column( name = "idtype")
     private Integer idtype;
     @Column(name = "iduser")

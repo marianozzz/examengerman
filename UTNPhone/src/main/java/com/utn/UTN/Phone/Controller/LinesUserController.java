@@ -1,6 +1,7 @@
 package com.utn.UTN.Phone.Controller;
 
 import com.utn.UTN.Phone.Model.LinesUser;
+import com.utn.UTN.Phone.Projection.LinesUserProjection;
 import com.utn.UTN.Phone.Service.LinesUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +28,7 @@ public class LinesUserController {
     }
 
     @GetMapping("/inactive")
-    public  List<LinesUser> getLinesInactive()
+    public  List<LinesUserProjection> getLinesInactive()
     {
         return  linesUserService.getCallInative();
     }

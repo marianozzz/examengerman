@@ -2,6 +2,7 @@ package com.utn.UTN.Phone.Service;
 
 
 import com.utn.UTN.Phone.Model.LinesUser;
+import com.utn.UTN.Phone.Projection.LinesUserProjection;
 import com.utn.UTN.Phone.Repository.LinesUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,9 +37,9 @@ public class LinesUserService {
         linesUserRepository.deleteById(id);
     }
 
-    public List<LinesUser> getCallInative()
+    public List<LinesUserProjection> getCallInative()
     {
 
-        return  linesUserRepository.linesuserinactive();
+        return  linesUserRepository.getNumber();
     }
 }
